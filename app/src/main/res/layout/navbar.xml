@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shadown"
+    android:clickable="false"
+    android:layout_height="55dp"
+    android:layout_width="match_parent">
+
+    <ImageButton
+        android:id="@+id/buttonNavbarLeft"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:layout_gravity="left|center"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="28dp"
+        android:padding="4dp"/>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="35dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="70dp"
+        android:visibility="invisible"
+        android:layout_height="35dp"
+        android:background="@drawable/selector_share"/>
+
+    <TextView
+        android:drawablePadding="0dp"
+        android:drawableTop="@drawable/icon_earned"
+        android:gravity="center"
+        android:id="@+id/gold"
+        android:layout_gravity="right|center"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:text="0000"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</FrameLayout>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/navbar"/>
+
+        <GridView
+            android:id="@+id/gridviewPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="3dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:clickable="false"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/help"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="2dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/icon_help" />
+
+                    <TextView
+                        android:id="@+id/passQuestion"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:padding="2dp"
+                        android:background="@drawable/icon_remote" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <GridView
+                        android:id="@+id/gridviewOutput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:horizontalSpacing="1dp"
+                        android:paddingTop="3dp"
+                        android:verticalSpacing="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/shareTest"
+                        android:visibility="invisible"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/selector_share"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/gridviewInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="7"
+                android:verticalSpacing="3dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/numberQuestion"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/icon_level"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+</FrameLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_subgold"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/dark_blue"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joker"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/dark_gray"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="match_parent"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Do you want toreveal a correct letter for xxx gold"
+            android:gravity="center"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@drawable/icon_button_gray"
+            />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@drawable/icon_button_grean"
+            />
+    </LinearLayout>
+
+</LinearLayout>
